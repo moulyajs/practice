@@ -1,4 +1,4 @@
-print("hello", "all", end=" ")
+"""print("hello", "all", end=" ")
 print("hi")
 print(13 / 6)
 print(format(13 / 6, ".3f"))
@@ -23,8 +23,7 @@ print(id(b), b)
 print(id(c), c)
 print(type(7 + 2j))
 print(type(eval("2+4-1")))
-print(40.0/10.00)
-
+print(40.0/10.00)"""
 """num = int(input("enter a number "))
 if num > 0:
     print("entered number",num,"is positive")
@@ -32,7 +31,6 @@ elif num < 0 :
     print("entered number",num,"is negative")
 else :
     print("entered number",num,"is zero")"""
-
 """"a = int(input())
 b = int(input())
 c = int(input())
@@ -42,13 +40,11 @@ if a == b:
 
   else :
       print("no")"""
-
 """i = 1
 while i <= 5:
   print(i)
   i += 1
 print("end of loop")"""
-
 """num = int(input("enter a number"))
 i = 1
 sum = 0
@@ -56,29 +52,24 @@ while i <= num:
   sum += i
   i += 1
 print("sum is",sum )"""
-
 """a = input("enter selection:")
 while a != 'f' and a != 'c':
      a = input("please enter 'f' or 'c'")"""
-
 """numbers = [1,2,3,4]
 print("original numbers ",numbers)
 for i in range(len(numbers)):
   numbers[i] += 1
 print("new numbers",numbers)"""
-
 """import math
 num = int(input ("enter max limit:"))
 for i in range(1,num+1):
   print(i , ":" ,math.sqrt(i))"""
-  
 """lst1 =  [1,2,3,4,5]
 lst2 = (lst1[::])
 print(lst1)
 print(lst2)
 print(id(lst1))
 print(id(lst2))"""
-
 """n = int(input("enter a number:"))
 if n%3 == 0 and n%5 == 0  :
   print("FIZZBUZZ")
@@ -88,14 +79,12 @@ elif n%3 == 0 :
   print("FIZZ")
 else :
   print(n,"is not divisible by 3 or 5)"""
-
 """name = input("enter your name:")
 age = int(input("enter your age:"))
 if age >= 18:
   print(name,"you r eligible for applying driving license")
 else:
   print(name,"you r not eligible for applying driving license")"""
-
 """year = int(input("enter a four digit year:"))
 if year % 100 == 0:
   
@@ -116,7 +105,6 @@ else:
   for j in range(1,i,1):
     print(j,end=" ")
   print()"""
-
 """a = True
 b = False
 c = False
@@ -172,3 +160,56 @@ while ch < 6:
    else:
        print("invalid choice")"""
 
+"""def compute(func,x,y):
+  for fun in func:
+    print(fun(x,y))
+def add(a,b) :
+  return a+b
+def mul(a,b):
+  return a*b
+lst = [add,mul]
+compute(lst,15,20)"""
+
+
+"""def outer(lst):
+  newlist = []
+  def even(num):
+    if num % 2 == 0:
+      return True
+  for i in lst:
+    if even(i) == True:
+      newlist.append(i)
+  print(newlist)
+
+lst = [2,3,4,5,6,7,9,10]
+outer(lst)"""
+
+
+"""def outer():
+  print("hi")
+  def inner():
+    print("hello")
+  return inner
+
+fun = outer()
+fun()"""
+
+
+"""def fib(n):
+  x,y = 0,1
+  for i in  range(n):
+    x,y=y,x+y
+    yield x
+for i in fib(3):
+  print(i)"""
+
+
+"""def fib(n):
+  x,y = 0,1
+  for i in range(n):
+    x,y=y,x+y
+    yield x
+def sq(n):
+  for i in n:
+    yield i**2
+print(sum(sq(fib(5))))"""
